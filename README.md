@@ -42,6 +42,8 @@ mydb = mysql.connector.connect(
 )
 mycursor = mydb.cursor()
 mycursor.execute("CREATE TABLE if not exists test3.ashraya(c1 INT,c2 VARCHAR(50));")
+OR 
+mycursor.execute("CREATE DATABASE if not exists test3")
 mydb.close()
 
 by sql-
@@ -50,7 +52,7 @@ CREATE TABLE table_name(c1 INT ,c2 VARCHAR(50));
 
 4- select * from database.tablename;
 
-5-
+
 
 
 
